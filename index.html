@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="style.css">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+   <title>WEB DEVELOPER</title>
+</head>
+
+<body>
+
+   <!-- HEADER -->
+   <header class="header">
+      <section class="face">
+         <h1 class="eurico">EURICO</h1>
+
+         <nav class="navbar_Links">
+            <a href="#Habilidades" class="link active" data-lang="pt">Habilidades</a>
+            <a href="#Habilidades" class="link active" data-lang="en">Skills</a>
+
+            <a href="#Projecto" class="link" data-lang="pt">Projecto</a>
+            <a href="#Projecto" class="link" data-lang="en">Projects</a>
+
+            <a href="#Sobre" class="link" data-lang="pt">Sobre Mim</a>
+            <a href="#Sobre" class="link" data-lang="en">About Me</a>
+
+            <a href="#Contacto" class="link" data-lang="pt">Contacto</a>
+            <a href="#Contacto" class="link" data-lang="en">Contact</a>
+         </nav>
+
+
+         <div class="lang-dropdown">
+
+            <button class="lang-btn" id="langBtn" onclick="toggleLangMenu()">
+               🌍 Idioma
+               <span id="arrowCell">▲</span>
+            </button>
+
+            <div class="lang-menu" id="langMenu">
+               <button onclick="setLang('pt')">🇵🇹 Português</button>
+               <button onclick="setLang('en')">🇬🇧 English</button>
+            </div>
+
+         </div>
+      </section>
+   </header>
+
+   <!-- MAIN -->
+   <main class="main">
+      <section class="face">
+
+         <!-- HERO -->
+         <div class="apresentacao">
+
+            <div class="dO_Apresentacao">
+
+               <div class="container_Apresentacao">
+                  <h1 class="webjr" data-lang="pt">PROGRAMADOR WEB</h1>
+                  <h1 class="webjr" data-lang="en">WEB DEVELOPER</h1>
+                  <p class="textoApresentacao" data-lang="pt">
+                     Olá, eu sou Angelino Eurico.
+                     Desenvolvedor Web focado em JavaScript, interfaces modernas, responsividade e experiências
+                     interativas para web.
+                  </p>
+
+                  <p class="textoApresentacao" data-lang="en">
+                     Hello, I am Angelino Eurico.
+                     Web Developer focused on JavaScript, modern interfaces, responsiveness, and interactive web
+                     experiences.
+                  </p>
+               </div>
+
+               <div class="dObutttonsLInks">
+                  <button class="buttonLinks cv" onclick="dowloadCv()">CV</button>
+                  <button class="buttonLinks gitHub">GitHub</button>
+
+                  <div class="dowloadCV">
+                     <a href="cvpt.docx" onclick="curriculum()" download> PT </a>
+                     <a href="cven.docx" onclick="curriculum()" download> EN </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- SKILLS -->
+         <div class="dO_habilidades" id="Habilidades">
+
+            <h2 data-lang="pt" class="title hidden_opacity">Habilidades</h2>
+            <h2 data-lang="en" class="title hidden_opacity">Skills</h2>
+
+            <div class="skills-container">
+
+               <div class="skill hidden_opacity">
+                  <h3>HTML5</h3>
+                  <p data-lang="pt">Estrutura de páginas web e semântica moderna.</p>
+                  <p data-lang="en">Web page structure and modern semantic markup.</p>
+               </div>
+
+               <div class="skill hidden_opacity">
+                  <h3>CSS3</h3>
+                  <p data-lang="pt">Design responsivo, layouts modernos e animações.</p>
+                  <p data-lang="en">Responsive design, modern layouts and animations.</p>
+               </div>
+
+               <div class="skill hidden_opacity">
+                  <h3>JavaScript</h3>
+                  <p data-lang="pt">Lógica de programação, manipulação do DOM e interatividade.</p>
+                  <p data-lang="en">Programming logic, DOM manipulation and interactivity.</p>
+               </div>
+
+               <div class="skill hidden_opacity">
+                  <h3>Responsive Design</h3>
+                  <p data-lang="pt">Criação de interfaces adaptáveis a todos os dispositivos.</p>
+                  <p data-lang="en">Building interfaces that adapt to all devices.</p>
+               </div>
+
+               <div class="skill hidden_opacity">
+                  <h3>Git & GitHub</h3>
+                  <p data-lang="pt">Controlo de versões e gestão de repositórios de código.</p>
+                  <p data-lang="en">Version control and code repository management.</p>
+               </div>
+
+               <div class="skill hidden_opacity">
+                  <h3>Node.js</h3>
+                  <p data-lang="pt">Backend básico em aprendizagem com JavaScript.</p>
+                  <p data-lang="en">Basic backend development with JavaScript (learning).</p>
+               </div>
+
+               <div class="skill hidden_opacity">
+                  <h3>UI Design</h3>
+                  <p data-lang="pt">Noções de design de interfaces modernas e usabilidade.</p>
+                  <p data-lang="en">Basic understanding of modern UI design and usability.</p>
+               </div>
+
+            </div>
+
+         </div>
+
+         <!-- PROJECTS -->
+         <div class="projecto" id="Projecto">
+
+            <h2 data-lang="pt" class="title hidden_opacity">Projetos</h2>
+            <h2 data-lang="en" class="title hidden_opacity">Projects</h2>
+
+            <div class="projectos-container">
+
+               <div class="project-card hidden_opacity">
+                  <h3>E-commerce Web</h3>
+                  <p data-lang="pt">Sistema de vendas online com HTML, CSS e JavaScript.</p>
+                  <p data-lang="en">Online sales system using HTML, CSS and JavaScript.</p>
+                  <button data-lang="pt">Ver Projeto</button>
+                  <button data-lang="en">View Project</button>
+               </div>
+
+               <div class="project-card hidden_opacity">
+                  <h3>Portfólio Pessoal</h3>
+                  <p data-lang="pt">Site pessoal moderno com design responsivo e animações.</p>
+                  <p data-lang="en">Modern personal website with responsive design and animations.</p>
+                  <button data-lang="pt">Ver Projeto</button>
+                  <button data-lang="en">View Project</button>
+               </div>
+
+            </div>
+
+         </div>
+
+         <!-- ABOUT -->
+         <div class="sobreMin" id="Sobre">
+
+            <h2 data-lang="pt" class="title hidden_opacity">Sobre Mim</h2>
+            <h2 data-lang="en" class="title hidden_opacity">About Me</h2>
+
+            <div class="about_Container">
+
+               <div class="imgaAbout hidden_opacity"></div>
+
+               <article>
+
+                  <p data-lang="pt" class="title hidden_opacity">
+                     Sou estudante do 1º ano de Engenharia Informática no ISUPE EKUIKUI, movido pela curiosidade e pela
+                     vontade constante de evoluir na área da tecnologia.
+                     Tenho experiência com JavaScript, HTML e CSS, e já desenvolvo projetos próprios como sistemas de
+                     e-commerce.
+                     Atualmente estou a aprofundar os meus conhecimentos em React e Node.js, com foco na criação de
+                     aplicações web mais complexas e escaláveis.
+                     Sou focado em transformar ideias em soluções funcionais e modernas através da programação.
+                  </p>
+
+                  <p data-lang="en" class="title hidden_opacity">
+                     I am a 1st year Computer Engineering student at ISUPE EKUIKUI, driven by curiosity and a constant
+                     desire to grow in the technology field.
+                     I have experience with JavaScript, HTML and CSS, and I am already building personal projects such
+                     as e-commerce systems.
+                     I am currently improving my skills in React and Node.js, focusing on building more complex and
+                     scalable web applications.
+                     I am focused on turning ideas into functional and modern solutions through programming.
+                  </p>
+
+               </article>
+            </div>
+
+         </div>
+
+         <!-- CONTACT -->
+         <div class="contacto " id="Contacto">
+
+            <h2 data-lang="pt" class="title hidden_opacity">Contacto</h2>
+            <h2 data-lang="en" class="title hidden_opacity">Contact</h2>
+
+            <form class="contact-form">
+
+               <!-- Nome -->
+               <div class="form-group hidden_opacity">
+                  <label data-lang="pt">Nome</label>
+                  <label data-lang="en">Name</label>
+                  <input type="text" name="name" placeholder="Digite o seu nome / Enter your name">
+               </div>
+
+               <!-- Email -->
+               <div class="form-group hidden_opacity">
+                  <label data-lang="pt">Email</label>
+                  <label data-lang="en">Email</label>
+                  <input type="email" name="email" placeholder="Digite o seu email / Enter your email">
+               </div>
+
+               <!-- Assunto -->
+               <div class="form-group hidden_opacity">
+                  <label data-lang="pt">Assunto</label>
+                  <label data-lang="en">Subject</label>
+                  <input type="text" name="subject" placeholder="Assunto / Subject">
+               </div>
+
+               <!-- Mensagem -->
+               <div class="form-group hidden_opacity">
+                  <label data-lang="pt">Mensagem</label>
+                  <label data-lang="en">Message</label>
+                  <textarea name="message" rows="5"
+                     placeholder="Escreva a sua mensagem / Write your message"></textarea>
+               </div>
+
+               <!-- Botão -->
+               <button type="submit" class="hidden_opacity">
+                  <span data-lang="pt">Enviar Mensagem</span>
+                  <span data-lang="en">Send Message</span>
+               </button>
+
+            </form>
+         </div>
+
+      </section>
+
+      <section class="success-overlay" id="successOverlay">
+         <div class="success-box">
+            <p class="text_sucess">Mensagem enviada com sucesso!</p>
+         </div>
+      </section>
+
+   </main>
+
+   <!-- FOOTER -->
+   <footer class="footer">
+
+      <section class="face footer-container hidden_opacity">
+
+         <div class="footer-brand">
+            <h2>EURICO</h2>
+            <p data-lang="pt">Programador Web em formação focado em criar soluções digitais.</p>
+            <p data-lang="en">Web developer in training focused on building digital solutions.</p>
+         </div>
+
+         <div class="footer-links">
+            <a href="#Habilidades">Skills</a>
+            <a href="#Projecto">Projects</a>
+            <a href="#Sobre">About</a>
+            <a href="#Contacto">Contact</a>
+         </div>
+
+         <div class="footer-contacto">
+            <a href="mailto:angelinoeurico574@gmail.com">Email: eurico@email.com</a>
+            <p>WhatsApp: +244 948 362 230</p>
+         </div>
+
+      </section>
+
+      <div class="footer-bottom">
+         <p>© 2026 EURICO. Todos os direitos reservados.</p>
+      </div>
+
+   </footer>
+
+   <script src="app.js"></script>
+</body>
+
+</html>
