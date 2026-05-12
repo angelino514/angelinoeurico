@@ -120,3 +120,19 @@ form.addEventListener("submit", function (event) {
 
    form.reset();
 });
+
+
+// DIRECIONAR PARA OS PROJECTOS
+function verProjecto(valor) {
+   if (valor === 'E-STORE') {
+      window.location.href = 'https://angelino514.github.io/E-STORE/'
+   }
+
+   else if (valor === 'PORTIFOLIO') {
+      window.location.href = 'https://angelino514.github.io/ME-PORTIFLIO/'
+   }
+
+   else if (valor === 'GITHUB') {
+      window.location.href = 'https://github.com/angelino514'
+   }
+}

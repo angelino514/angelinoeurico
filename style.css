@@ -600,6 +600,7 @@ body {
    transform: scale(0.8);
    transition: 0.3s ease;
    border-left: 4px solid #2ecc71;
+   max-width: 300px;
 }
 
 /* Ativo */
@@ -670,5 +671,12 @@ body {
 
    .about_Container {
       grid-template-columns: 1fr;
+   }
+
+   /* Caixa central */
+   .success-box {
+      padding: 20px 0;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      max-width: 300px;
    }
 }
