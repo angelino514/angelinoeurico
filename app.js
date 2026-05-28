@@ -125,7 +125,7 @@ form.addEventListener("submit", function (event) {
 // DIRECIONAR PARA OS PROJECTOS
 function verProjecto(valor) {
    if (valor === 'E-STORE') {
-      window.location.href = 'https://angelino514.github.io/E-STORE/'
+      window.location.href = 'https://angelino514.github.io/ecomerce.js/'
    }
 
    else if (valor === 'PORTIFOLIO') {
